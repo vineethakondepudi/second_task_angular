@@ -1,0 +1,32 @@
+<table><tr><td>
+    <div class="rform"><b>Registration Form</b></div>
+    <hr>
+    <form [formGroup]="login"><br><br>
+
+        <span class="form">
+
+        <label for="fname" style="padding-left: 28px;">Firstname : </label>
+        <input type="text" pInputText formControlName="fn" /><br><br>
+
+        <label for="lname" style="padding-left: 28px;">Lastname : </label>
+        <input type="text" pInputText formControlName="ln" /><br><br>
+
+        <label for="uname" style="padding-left: 17px;">Username : </label>
+        <input type="text" pInputText formControlName="un" /><br><br>
+
+        <label for="passwd" style="padding-left: 18px;">Password : </label>
+        <input type="text" pInputText required formControlName="pw" /><br><br>
+
+        <label for="email" style="padding-left: 50px;">Email : </label>
+        <input type="text" pInputText formControlName="rpw"/><br><br>
+
+        <label for="mbn">Mobile No : </label>
+        <input type="text" pInputText /><br><br><br><br>
+
+        <button pButton pRipple type="button" label="Register" (click)="show()" class="p-button-raised p-button-success"></button>
+        <a href="#">Back to Home</a>
+
+    </span>
+    </form>
+</td></tr></table>
+<div [ngStyle]="{backgroundColor:'var(--blue-500)'}">vinnu</div>

@@ -1,0 +1,55 @@
+
+<fieldset class="field">
+    
+<form action="" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    
+    <span class="reg">Registration Form</span>
+    <hr><br><br>
+    <div class="grid">
+        
+        <div class="col-6" style="padding-left: 20px;"><label for="fname">Firstname:</label><br>
+    <input type="text" placeholder="Enter Firstname" formControlName="fn" pInputText> <br> 
+    <span style="color: red;" *ngIf="fn && fn.invalid && fn.touched">Firstnmae input field is not valid</span><br><br>
+</div>
+
+    <div class="col-6" style="padding-left: 80px;"><label for="fname">Lastname:</label><br>
+    <input type="text" placeholder="Enter Lastname" formControlName="ln" pInputText><br>
+    <span style="color: red;" *ngIf="ln && ln.invalid && ln.touched">Lastname input field is not valid</span><br><br>
+</div>
+
+    <div class="col-6" style="padding-left: 20px;"><label for="fname">Email:</label><br>
+    <input type="text" placeholder="Enter Email" formControlName="em" pInputText><br>
+    <span style="color: red;" *ngIf="em && em.invalid && em.touched">Email input field is not valid</span><br><br>
+</div>
+
+    <div class="col-6" style="padding-left: 80px;"><label for="fname">MobileNo:</label><br>
+    <input type="text" placeholder="Enter MobileNo" formControlName="mn" pInputText><br>
+    <span style="color: red;" *ngIf="mn && mn.invalid && mn.touched">Mobileno input field is not valid</span><br><br>
+</div>
+</div>
+  <div class="grid">
+    <div class="col-6" style="padding-left: 60px;">
+    <button pButton [disabled]="loginForm.invalid" (click)="onSubmit()" >login</button>
+</div>
+    <div class="col-6" style="padding-left: 100px;">
+    <button pButton type="button" [disabled]="loginForm.invalid" (click)="removeAll()" >Reset</button>
+</div>
+</div>
+</form>
+
+</fieldset>
+
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Mobile No</th>
+    </tr>
+    <tr *ngFor="let item of reactivet ">
+        <td>{{item.fn}}</td>
+        <td>{{item.ln}}</td>
+        <td>{{item.em}}</td>
+        <td>{{item.mn}}</td>
+    </tr>
+</table>

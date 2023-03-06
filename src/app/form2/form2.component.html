@@ -1,0 +1,10 @@
+<table><tr><td>
+    <p class="login">Login Form</p>
+<form  [formGroup]="login">
+    <span style="color: rgb(40, 120, 199);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> User Name:</span>
+    <input  pInputText ngModel  formControlName="uname"><br><br>
+    <span style="color: rgb(40, 120, 199); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Password: </span>
+    <input type="password" pPassword formControlName="passwd"/><br><br>
+    <button pButton type="button" label="Click" (click)="show( )" ></button>
+</form>
+</td></tr></table>

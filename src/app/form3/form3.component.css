@@ -1,0 +1,67 @@
+table,tr,td{
+    border:2px solid black;
+    border-collapse:collapse;
+    width:30%;
+    height:450px;
+    border-color: rgb(40, 120, 199);
+}
+.fn{
+    color: rgb(40, 120, 199);
+    padding-left: 65px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ln{
+    color: rgb(40, 120, 199);
+    padding-left: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.em{
+    color: rgb(40, 120, 199);
+    padding-left: 95px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ps{
+    color: rgb(40, 120, 199);
+    padding-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rps{
+    color: rgb(40, 120, 199);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login{
+    color:rgb(40, 120, 199) ;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signin1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+   
+  }
+
+  .btn {
+ 
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    height: 40px;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

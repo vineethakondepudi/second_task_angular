@@ -1,0 +1,19 @@
+table,tr,td{
+    border:2px solid white;
+    border-collapse: collapse;
+    background-color: rgb(230, 223, 235);
+    width: 30%;
+    height: 600px;
+}
+
+.rform{
+    font-size: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: black;
+}
+
+.form{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

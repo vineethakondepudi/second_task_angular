@@ -1,0 +1,15 @@
+table,tr,td{
+    border:2px solid black;
+    border-collapse:collapse;
+    width:25%;
+    height:450px;
+    border-color: rgb(40, 120, 199);
+}
+
+.login{
+    color:rgb(40, 120, 199) ;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

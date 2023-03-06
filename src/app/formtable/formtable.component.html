@@ -1,0 +1,81 @@
+
+<div class="card">
+    <form [formGroup]="userForm">
+        <div class="mt-5 box">
+            <div class="form-row">
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label >Firstname:</label>
+                    </div>
+                    <div calss="form-row" style="margin-top: 10px;">
+                        <div class="col">
+                            <input pInputText type="text" formControlName="name" class="form-control" placeholder="Enter Firstname">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label>Lastname:</label>
+                    </div>
+                    <div calss="form-row" style="margin-top: 10px;">
+                        <div class="col">
+                            <input pInputText type="text" formControlName="address" class="form-control" placeholder="Enter Lastname">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label>Email:</label>
+                    </div>
+                    <div calss="form-row" style="margin-top: 10px;">
+                        <div class="col">
+                            <input pInputText type="text" formControlName="contactno" class="form-control" placeholder="Enter Email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label>Mobile no:</label>
+                    </div>
+                    <div calss="form-row" style="margin-top: 10px;">
+                        <div class="col">
+                            <input pInputText type="text" formControlName="gender" class="form-control" placeholder="Enter Mobile No">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" pButton  (click)="addItem()">Add</button></div>
+                        <div class="col-6">
+                        <button type="button" pButton (click)="reset()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+        <div class="col-md-8">
+            <table class="table table-borderd">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        <th>Mobile No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of listData">
+                        <td> <span>{{item.name}}</span></td>
+                        <td> <span>{{item.address}}</span></td>
+                        <td> <span>{{item.contactno}}</span></td>
+                        <td><span>{{item.mobileno}}</span></td>
+                        <td>  <button type="button" (click)="removeItem(item)">Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>

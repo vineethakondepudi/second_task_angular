@@ -1,0 +1,10 @@
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+.field{
+    background-color: rgb(198, 172, 198);
+}
+.reg{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}

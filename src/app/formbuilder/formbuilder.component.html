@@ -1,0 +1,32 @@
+<fieldset class="field" style="width:50%">
+    <span class="reg">
+        <h1 style="text-align:center;">Registration Form</h1>
+        <form [formGroup]="regForm">
+            <div class="grid">
+                <div class="col-6">fname:<br> <input type="text" formControlName="fname" pInputText
+                        placeholder="Enter First Name" pInputText required pattern="[a-zA-Z' ']+$" />
+                    &nbsp;<br>
+                   
+                </div>
+
+                <div class="col-6">lname: <br><input type="text" formControlName="lname" pInputText
+                        placeholder="Enter Last Name" pInputText required pattern="[a-zA-Z' ']+$" />
+                    &nbsp;<br>
+                   
+                </div>
+
+                <div class="col-6">email:<br> <input type="text" formControlName="email" pInputText
+                        placeholder="Enter Email Id" pInputText required pattern="[a-zA-Z0-9]+@miraclesoft.com$" />
+                    <br>
+                    
+                </div>
+
+                <div class="col-6">Mobile:<br> <input type="text" formControlName="mobile" pInputText />
+                    
+                </div>
+            </div>
+
+            <button pButton type="button" [disabled]="addEmploy.invalid" (click)="onSubmit()">Submit</button>
+        </form>
+    </span>
+</fieldset>

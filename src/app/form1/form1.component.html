@@ -1,0 +1,18 @@
+<table><tr><td>
+<p class="login">Login Form</p>
+<form action="" #loginform="ngForm" (ngSubmit)="(loginform)">
+    
+    <span style="color: rgb(40, 120, 199);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> User Name:</span>
+    <input required  class="uname" type="text" pattern="[{A-Za-z}{0-9}]{8,12}" pInputText ngModel  name="uname" #un="ngModel"><br>
+    <span *ngIf="un.invalid&&un.touched" style="color:red">Username contains minimum 8 values</span><br><br>
+  
+    <span style="color: rgb(40, 120, 199);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Password:</span>
+    <input required  class="uname" type="text" pattern="[{A-Za-z}{0-9}]{8,12}" pInputText ngModel  name="uname" #ps="ngModel"><br>
+    <span *ngIf="un.invalid&&un.touched" style="color:red">Passwrod contains minimum 8 values</span><br><br>
+    
+
+    <span *ngIf="un.value!=ps.value" style="color: red;">Does not match</span><br>
+    <button class="button" pButton type="button" label="Click" (click)="show(un,ps)" ></button>
+    
+</form>
+</td></tr></table>
